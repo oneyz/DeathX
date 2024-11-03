@@ -1,0 +1,7 @@
+name: DeathX
+version: '1.0-SNAPSHOT'
+main: org.me.oneyz.deathX.DeathX
+api-version: '1.21'
+prefix: DeathX
+load: STARTUP
+authors: [ oneyz_ ]
