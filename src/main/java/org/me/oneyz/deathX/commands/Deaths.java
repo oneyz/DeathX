@@ -21,7 +21,7 @@ public class Deaths implements CommandExecutor {
             try {
                 page = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
-                sender.sendMessage("Podano nieprawidłową stronę. Użyj liczby całkowitej.");
+                sender.sendMessage("§4ERROR: §cUpewnij się że użyłeś poprawnego formatu strony");
                 return true;
             }
         }

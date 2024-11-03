@@ -21,7 +21,7 @@ public class DeathUtils {
         int totalPages = (int) Math.ceil((double) sortedList.size() / pageSize);
 
         if (page > totalPages || page <= 0) {
-            sender.sendMessage("Podana strona nie istnieje.");
+            sender.sendMessage("§cNieprawidłowa strona");
             return;
         }
 
@@ -32,6 +32,10 @@ public class DeathUtils {
         for (int i = start; i < end; i++) {
             Map.Entry<String, Integer> entry = sortedList.get(i);
             sender.sendMessage("§a" + entry.getKey() + "§8: §a" + entry.getValue());
+        }
+
+        if (page < totalPages) {
+            sender.sendMessage("§7Aby przejść do następnej strony użyj §a/smierci " + (page + 1) + "§7.");
         }
     }
 }
