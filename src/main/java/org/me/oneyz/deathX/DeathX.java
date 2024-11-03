@@ -6,6 +6,8 @@ import org.me.oneyz.deathX.commands.Deaths;
 import org.me.oneyz.deathX.config.ConfigManager;
 import org.me.oneyz.deathX.events.PlayerDeathListener;
 
+import java.util.Objects;
+
 public final class DeathX extends JavaPlugin {
 
     private ConfigManager configManager;
@@ -15,8 +17,8 @@ public final class DeathX extends JavaPlugin {
         configManager = new ConfigManager(this);
         configManager.loadDeathsData();
 
-        getCommand("dreload").setExecutor(new DReload(this));
-        getCommand("smierci").setExecutor(new Deaths(this));
+        Objects.requireNonNull(getCommand("dreload")).setExecutor(new DReload(this));
+        Objects.requireNonNull(getCommand("smierci")).setExecutor(new Deaths(this));
 
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(this), this);
     }
