@@ -37,7 +37,7 @@ public class ConfigManager {
                     plugin.getLogger().warning("Failed to create deaths.yml file.");
                 }
                 deathsConfig = YamlConfiguration.loadConfiguration(deathsFile);
-                saveDeathsData(); // Save an empty configuration to file
+                saveDeathsData();
             } catch (IOException e) {
                 plugin.getLogger().log(Level.SEVERE, "Error while creating deaths.yml file: ", e);
             }
