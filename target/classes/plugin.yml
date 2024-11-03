@@ -5,3 +5,9 @@ api-version: '1.21'
 prefix: DeathX
 load: STARTUP
 authors: [ oneyz_ ]
+commands:
+  dreload:
+    permission: deathx.reload
+    permission-message: §cNie masz dostepu do tej komendy
+  smierci:
+    description: Wyswietla liste smierci serwerowych

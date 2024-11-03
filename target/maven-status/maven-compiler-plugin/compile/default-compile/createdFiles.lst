@@ -1,1 +1,6 @@
+org\me\oneyz\deathX\utils\DeathUtils.class
 org\me\oneyz\deathX\DeathX.class
+org\me\oneyz\deathX\config\ConfigManager.class
+org\me\oneyz\deathX\events\PlayerDeathListener.class
+org\me\oneyz\deathX\commands\Deaths.class
+org\me\oneyz\deathX\commands\DReload.class
