@@ -7,7 +7,8 @@ load: STARTUP
 authors: [ oneyz_ ]
 commands:
   dreload:
-    permission: deathx.reload
-    permission-message: §cNie masz dostepu do tej komendy
+    description: Przeładowuje na nowo plik śmierci
   smierci:
-    description: Wyswietla liste smierci serwerowych
+    description: Wyświetla liste śmierci serwerowych
+  dget:
+    description: Wyświetla liczbe śmierci gracza
